@@ -1,0 +1,97 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(226, 225, 225);
+    text-shadow: 3px 3px 2px black;
+}
+
+/**********************NAV BAR***********************/
+#navBar{
+    background-image: url(../img/background\ projetdev.png);
+    background-position-y: center;
+    background-size: cover;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+}
+.startBootstrap{
+    padding: 40px 100px;
+    font-size: 30px;
+    font-family: 'Laila', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 20px;
+}
+.link{
+    list-style-type: none;
+}
+.link :hover{
+    background-color: rgba(211, 211, 210, 0.5);
+    border-radius: 20px;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Laila', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 30px;
+}
+#wheel{
+    padding: 40px 100px;
+    color: #91BF2C;
+    animation: spin 6s linear infinite;
+}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*********************** SIDE NAV *************************/
+
+.sideNavClass{
+    background-image: url(../img/background\ projetdev.png);
+    background-size: cover;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow-x: hidden;
+    position: fixed;
+    top:0;
+}
+
+.sideNavClass li{
+    font-family: 'Laila', sans-serif;
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.sideNavClass button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 50px 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #91BF2C;
+    background-color: white;
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+
+/*********************** DARK MODE *************************/
+
+.dark-mode{
+    background-color: #202020;
+    color: white;
+}

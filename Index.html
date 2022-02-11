@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Connexion</title>
+</head>
+
+<body>
+
+
+    <!--------------------------------PAGE DE LOGIN-------------------------------->
+
+    <h2 class="h2-login">Welcome!</h2>
+
+    <h3 class="h3-login">Please log in to enter</h3>
+
+    <div id="loader"></div>
+
+
+    <div id="globalLogin">
+
+            <div class="login">
+                <label for="email" class="label">Email</label>
+                <input type="email" required id="email" placeholder="enter your mail">
+            </div>
+
+            <div class="login">
+                <label for="password" class="label">Password</label>
+                <input type="password"  required id="password" placeholder="enter your password">
+            </div>
+
+            <div class="login">
+                <label for="randomNumber" class="label" id="copyNumber"></label>
+                <input type="" id="enteredNumber" placeholder="---">
+            </div>
+
+        <div id="error"></div>
+
+        <button type="submit" id="btn-connexion" onclick="connexion()">Connect</button>
+
+    </div>
+
+    <script src="javascript/Login.js"></script>
+</body>
+
+</html>
