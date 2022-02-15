@@ -1,0 +1,33 @@
+#section-3{
+    display: flex;
+}
+#competencesEtre{
+    font-family: 'Laila', sans-serif;
+    width: 30%;
+    margin-left: 10%;
+    text-align: left;
+    color: rgb(98, 98, 98);
+    font-size: 30px;
+    border-right: 8px dotted rgb(241, 255, 192);
+}
+#competencesFaire{
+    font-family: 'Laila', sans-serif;
+    margin-left: 5%;
+    width: 50%;
+    text-align: left;
+    margin-right: 10%;
+    color: rgb(98, 98, 98);
+    font-size: 30px;
+}
+#competencesEtreP{
+    margin-left: 10%;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+}
+#competencesFaireP{
+    margin-left: 5%;
+    text-align: left;
+    color: white;
+    font-size: 16px
+}

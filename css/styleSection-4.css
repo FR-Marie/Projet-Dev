@@ -1,0 +1,36 @@
+#portfolioH2{
+    font-family: 'Laila', sans-serif;
+    padding-top: 50px;
+    margin: auto;
+    width: 50%;
+    margin-right: 10%;
+    color: rgb(98, 98, 98);
+    font-size: 35px;
+}
+
+#portfolioP{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+figure{
+    background-color: rgb(98, 98, 98);
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px black;
+}
+figure img{
+    border-radius: 30px 30px 0px 0px;
+}
+figcaption{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: pink;
+    padding: 15px 15px 0px 10px;
+}
+
+#portfolioP p{
+    text-align: center;
+    color: wheat;
+}

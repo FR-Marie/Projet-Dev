@@ -1,0 +1,20 @@
+/**************************** SECTION 2*********************************/
+#section-2{
+    margin-top: 50px;
+}
+.contenuFormH2{
+    font-family: 'Laila', sans-serif;
+    font-weight: bolder;
+    padding-top: 20px;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 35px;
+    color: rgb(98, 98, 98);
+}
+.contenuFormP{
+    margin-left: 10%;
+    width: 50%;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-bottom: 50px;
+}

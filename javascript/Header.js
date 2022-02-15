@@ -8,7 +8,7 @@ function closeSideNav(){
 }
 
 
-/****************** ORANGE MODE *********************/
+/****************** DARK MODE *********************/
 
 function darkMode(){
     let btnDarkMode = document.body;
@@ -29,3 +29,16 @@ function darkMode(){
     }
 }
 
+
+/****************** MENU BURGER *********************/
+
+function responsiveNav(){
+    let navResponsive = document.getElementById("navBar");
+
+    if (navResponsive.className === "navBarClass"){
+        navResponsive.className += " responsive";
+        /*alert("test btn burger")*/
+    }else{
+        navResponsive.className = "navBarClass";
+    }
+}

@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styleAccueil.css">
+    <link rel="stylesheet" href="css/styleSection-1.css">
+    <link rel="stylesheet" href="css/styleSection-2.css">
+    <link rel="stylesheet" href="css/styleSection-3.css">
+    <link rel="stylesheet" href="css/styleSection-4.css">
+    <link rel="stylesheet" href="css/styleFooter.css">
+
     <link rel="stylesheet" href="css/responsive.css">
 
+    <!---------------animate css------------------>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!---------------font awesome------------------>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!---------------google font------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,45 +30,109 @@
 
     <title>Accueil</title>
 </head>
+
 <body>
+
+    <!---------------------------------HEADER-------------------------------->
+
+    <div id="navBar" class="navBarClass">
+
+        <div class="gauche">
+            <a href="#">MARIE FAVRE-ROCHEX</a>
+        </div>
+
+        <div class="centre">
+            <a href="#section-2"><i class="fa-solid fa-sun sunIcone"></i>MA FORMATION</a>
+            <a href="#section-3"><i class="fa-solid fa-sun sunIcone"></i>MES COMPETENCES</a>
+            <a href="#section-4"><i class="fa-solid fa-sun sunIcone"></i>MON PORTFOLIO</a>
+            <a href="#section-5"><i class="fa-solid fa-sun sunIcone"></i>ME CONTACTER</a>
+        </div>
+
+        <div class="droite">
+            <a id="wheel" onclick="openSideNav()"><i class="fa-solid fa-gear fa-3x" alt="open-settings" title="open-settings"></i></a>
+        </div>
+
+        <div class="burger">
+            <a href="#" class="btnBurger" onclick="responsiveNav()"><i class="fa fa-bars fa-3x"></i></a>
+        </div>
+        
+
+    </div>
+
+
+
+    <div id="sideNav" class="sideNavClass">
+        <ul>
+            <li><button class="btn-closeSideNav" onclick="closeSideNav()" alt="close-settings"
+                    title="close-settings">CLOSE SETTINGS</button></li>
+            <li>Dark mode on/off &emsp;
+                <i class="fa-solid fa-toggle-off" id="toggleIcon" title="dark mode on/off" onclick="darkMode()"></i>
+            </li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+
+    </div>
+
+
+    <!--------------------------------- SECTION 1 PRESENTATION -------------------------------->
+    <section id="section-1">
+        <h1 id="h1" class="animate__animated animate__rubberBand"></h1>
+        <p id="presP"></p>
+
+    </section>
+
+    <hr>
+
+
+    <!--------------------------------- SECTION 2 CONTENU DE LA FORMATION -------------------------------->
+
+    <section id="section-2">
+        <h2 id="contenuFormationH2"></h2>
+        <p id="contenuFormationP"></p>
+    </section>
+
+    <hr>
+    <!--------------------------------- SECTION 3 COMPETENCES -------------------------------->
+
+    <section id="section-3">
+
+        <div id="competencesEtre">
+            <h2 id="competencesEtreH2"></h2>
+            <p id="competencesEtreP">
+            </p>
+        </div>
+
+        <div id="competencesFaire">
+            <h2 id="competencesFaireH2"></h2>
+            <p id="competencesFaireP">
+            </p>
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!--------------------------------- SECTION 4 PORTFOLIO -------------------------------->
+
+    <section id="section-4">
+        <h2 id="portfolioH2"></h2>
+        <p id="portfolioP"></p>
+    </section>
+
+    <!--------------------------------- SECTION 5 ME CONTACTER (FOOTER) -------------------------------->
+
     
-<!---------------------------------HEADER-------------------------------->
-
-<div id="navBar">
-
-    <a href="#" class="startBootstrap">Marie FAVRE-ROCHEX</a>
-
-    <ul class="navlinks">
-        <li class="link"><a href="">ABOUT</a></li>
-        <li class="link"><a href="">PORTFOLIO</a></li>
-        <li class="link"><a href="">CONTACT</a></li>
-    </ul>
-    
-    <a id="wheel" onclick="openSideNav()"><i class="fa-solid fa-gear fa-3x" alt="open-settings" title="open-settings"></i></a>
-
-</div>
-
-<div id="sideNav" class="sideNavClass">
-    <ul>
-        <li><button class="btn-closeSideNav" onclick="closeSideNav()" alt="close-settings" title="close-settings">CLOSE SETTINGS</button></li>
-        <li>Dark mode on/off &emsp;
-            <i class="fa-solid fa-toggle-off" id="toggleIcon" title="dark mode on/off" onclick="darkMode()"></i>
-        </li>
-        <li>...</li>
-        <li>...</li>
-        <li>...</li>
-        <li>...</li>
-    </ul>
-
-</div>
-
 
     <!---------------------------------JAVASCRIPT-------------------------------->
     <script src="javascript/Header.js"></script>
-    <script src="javascript/Bloc-1.js"></script>
-    <script src="javascript/Bloc-2.js"></script>
-    <script src="javascript/Bloc-3.js"></script>
-    <script src="javascript/Bloc-4.js"></script>
     <script src="javascript/Footer.js"></script>
+    <script src="javascript/Section-1.js"></script>
+    <script src="javascript/Section-2.js"></script>
+    <script src="javascript/Section-3.js"></script>
+    <script src="javascript/Section-4.js"></script>
 </body>
+
 </html>

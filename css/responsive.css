@@ -1,0 +1,39 @@
+/*************** RESPONSIVE NAV ******************/
+@media screen and (max-width: 1500px) {
+    @keyframes spin {
+        0% { transform: none; }
+    }
+    .fa-solid.sunIcone{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .centre a{
+        display: none;
+    }
+    .droite a{
+        display: none;
+    }
+    .burger{
+        right: 0;
+        display: block;
+        float: right;
+        position: absolute;
+        top: 30px;
+    }
+    .navBarClass.responsive {
+        position: relative;}
+    .navBarClass.responsive a.btnBurger {
+        position: absolute;
+        right: 60px;
+        top: 0;
+    }
+    .navBarClass, .centre, .responsive a {
+        display: block!important;
+        text-align: center;
+    }
+    .gauche{
+        text-align: left;
+    }
+}

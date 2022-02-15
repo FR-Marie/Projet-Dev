@@ -5,49 +5,47 @@ html, body{
 }
 body{
     background-color: rgb(226, 225, 225);
-    text-shadow: 3px 3px 2px black;
+    text-shadow: 2px 2px 2px black;
 }
 
 /**********************NAV BAR***********************/
 #navBar{
     background-image: url(../img/background\ projetdev.png);
     background-position-y: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 10px;
-}
-.startBootstrap{
-    padding: 40px 100px;
-    font-size: 30px;
-    font-family: 'Laila', sans-serif;
-    font-weight: bolder;
-    text-decoration: none;
-    color: white;
-}
-.navlinks{
-    display: inline-flex;
-    padding: 20px;
-}
-.link{
-    list-style-type: none;
-}
-.link :hover{
-    background-color: rgba(211, 211, 210, 0.5);
-    border-radius: 20px;
-}
-.link a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Laila', sans-serif;
-    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
     font-weight: bolder;
     padding: 30px;
 }
-#wheel{
-    padding: 40px 100px;
-    color: #91BF2C;
+#navBar a{
+    color: white;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Laila', sans-serif;
+}
+.burger{
+    display: none;
+}
+.gauche{
+    font-size: 25px;
+    text-align: center;
+}
+.centre{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.droite .fa-solid{
+    color: white;
+    border: 3px solid #dadada;
+    border-radius: 50px;
+}
+
+
+/*******animation settings*********/
+.droite{
     animation: spin 6s linear infinite;
 }
   @keyframes spin {
@@ -55,21 +53,34 @@ body{
     100% { transform: rotate(360deg); }
 }
 
+.centre a:hover{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 60%;
+}
+.sunIcone{
+    padding: 0px 5px;
+}
+
+/*********************** MENU BURGER *************************/
+
+
 /*********************** SIDE NAV *************************/
 
 .sideNavClass{
     background-image: url(../img/background\ projetdev.png);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     transition: 1s;
     width: 0;
     overflow-x: hidden;
     position: fixed;
     top:0;
+    z-index: 1000;
 }
 
 .sideNavClass li{
-    font-family: 'Laila', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 10px;
     list-style-type: none;
     font-size: 40px;
@@ -82,10 +93,14 @@ body{
     margin: 50px 50px;
     padding: 10px 20px;
     border-radius: 10px;
-    color: #91BF2C;
+    color: rgb(104, 102, 102);
     background-color: white;
     font-size: 20px;
     word-spacing: 5px;
+}
+
+.startBootstrap{
+    text-align: center;
 }
 
 
@@ -95,3 +110,4 @@ body{
     background-color: #202020;
     color: white;
 }
+
