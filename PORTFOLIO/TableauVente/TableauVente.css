@@ -52,6 +52,7 @@ li{
 }
 li img{
     padding: 20px;
+    height: 100px;
 }
 h4{
     font-family: 'Laila', sans-serif;
@@ -70,11 +71,35 @@ button{
     margin-left: 10%;
     width: 25%;
     border-radius: 20px;
-    border: 10px dashed rgb(182, 61, 81) ;
+    border: 5px dashed rgb(182, 61, 81) ;
     background-color: wheat;
 }
 .h3-panier{
     color: rgb(182, 61, 81) ;
     text-align: center;
     font-size: 30px;
+}
+
+input{
+    color: rgba(116, 41, 53);
+    background-color: wheat;
+    display: block;
+}
+
+.p-panier{
+    color: rgba(116, 41, 53);
+}
+.h4-panier{
+    font-size: 16px;
+    color: rgb(182, 61, 81);
+    font-family: 'Laila', sans-serif;
+}
+.img-panier{
+    height: 100px;
+}
+
+#prix-border{
+    border-bottom: 2px solid rgba(116, 41, 53);
+    width: 50%;
+    font-weight: bolder;
 }

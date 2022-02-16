@@ -14,7 +14,7 @@ portfolioContent.innerHTML =
 </figure>
 
 <figure>
-    <a href="PORTFOLIO/Casse Brique/CasseBrique.html"><img src="img/projets portfolio.jpg" alt="projet-2" title="projet-2"></a>
+    <a href="PORTFOLIO/CasseBrique/CasseBrique.html"><img src="img/projets portfolio.jpg" alt="projet-2" title="projet-2"></a>
     <figcaption>Jeu - Casse briques</figcaption>
     <p>(Janvier 2022)</p>
 </figure>
@@ -26,7 +26,7 @@ portfolioContent.innerHTML =
 </figure>
 
 <figure>
-    <a href="PORTFOLIO/Deviner un nombre/DevineNombre.html"><img src="img/projets portfolio.jpg" alt="projet-4" title="projet-4"></a>
+    <a href="PORTFOLIO/DevinerUnNombre/DevineNombre.html"><img src="img/projets portfolio.jpg" alt="projet-4" title="projet-4"></a>
     <figcaption>Jeu - Deviner un nombre</figcaption>
     <p>(Janvier 2022)</p>
 </figure>
