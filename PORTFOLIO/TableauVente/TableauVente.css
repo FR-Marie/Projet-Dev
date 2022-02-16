@@ -6,8 +6,75 @@ html, body{
 body{
     background: rgb(182, 61, 81);
 }
+
+/* TITRE H2 */
 h2{
     font-size: 50px;
-    color: white;
+    color: wheat;
     text-align: center;
+    background-color: rgba(116, 41, 53);
+    padding: 20px;
+}
+
+/****** DIV PRINCIPALE *******/
+.produits-et-panier{
+    display: flex;
+}
+
+/************ TABLEAU 1 ************/
+#tableau1{
+    margin-left: 5%;
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 10px dashed rgb(182, 61, 81) ;
+    background-color: wheat;
+}
+#liste-des-Produits{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.h3-produits{
+    color: rgb(182, 61, 81) ;
+    text-align: center;
+    font-size: 30px;
+}
+li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(182, 61, 81);
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid rgb(182, 61, 81);
+    margin: 15px 5px;
+}
+li img{
+    padding: 20px;
+}
+h4{
+    font-family: 'Laila', sans-serif;
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+}
+button{
+    color: red;
+}
+
+
+/************ TABLEAU 2 ************/
+#tableau2{
+    margin-left: 10%;
+    width: 25%;
+    border-radius: 20px;
+    border: 10px dashed rgb(182, 61, 81) ;
+    background-color: wheat;
+}
+.h3-panier{
+    color: rgb(182, 61, 81) ;
+    text-align: center;
+    font-size: 30px;
 }
