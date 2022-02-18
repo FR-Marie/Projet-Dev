@@ -34,7 +34,7 @@ function connexion(){
         function redirection (){
             window.location = "Accueil.html";
         }
-        setTimeout (redirection, 3000);
+        setTimeout (redirection, 2000);
     }else{
         if(emailUser === "" || passwordUser === "" || validNumber == ""){
             let errorLogin = document.getElementById("error");

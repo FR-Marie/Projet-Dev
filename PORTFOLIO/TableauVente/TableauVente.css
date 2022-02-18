@@ -50,9 +50,10 @@ li{
     border: 1px solid rgb(182, 61, 81);
     margin: 15px 5px;
 }
+
 li img{
     padding: 20px;
-    height: 100px;
+    height: 280px;
 }
 h4{
     font-family: 'Laila', sans-serif;
@@ -102,4 +103,38 @@ input{
     border-bottom: 2px solid rgba(116, 41, 53);
     width: 50%;
     font-weight: bolder;
+    margin: auto;
+}
+li input{
+    margin: auto;
+}
+.li-panier-class{
+    margin-right: 50px;
+    padding: 10px 0px 10px 0px;
+}
+
+.alert-quantiteClass{
+    color: red;
+    font-weight: bold;
+    animation: clignote 1s linear infinite;
+}
+@keyframes clignote {  
+  50% { opacity: 0; }
+}
+
+.p-panierInput{
+    width: 25%;
+}
+
+#btn-validerAchat{
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    color: rgb(182, 61, 81);
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+}
+#btn-validerAchat:hover{
+    cursor: pointer;
+    color: green;
 }

@@ -5,7 +5,6 @@ html, body{
 }
 body{
     background-color: rgb(226, 225, 225);
-    text-shadow: 2px 2px 2px black;
 }
 
 /**********************NAV BAR***********************/
@@ -17,12 +16,12 @@ body{
     display: flex;
     justify-content: space-around;
     font-weight: bolder;
-    padding: 30px;
+    padding: 50px 0px;
 }
 #navBar a{
     color: white;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     font-family: 'Laila', sans-serif;
 }
@@ -30,11 +29,11 @@ body{
     display: none;
 }
 .gauche{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 .centre{
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 10px;
 }
 .droite .fa-solid{
@@ -45,6 +44,7 @@ body{
 
 
 /*******animation settings*********/
+
 .droite{
     animation: spin 6s linear infinite;
 }
@@ -86,7 +86,6 @@ body{
     font-size: 40px;
     text-align: center;
     color: white;
-    font-weight: bolder;
 }
 .sideNavClass button{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -99,15 +98,15 @@ body{
     word-spacing: 5px;
 }
 
-.startBootstrap{
-    text-align: center;
-}
-
 
 /*********************** DARK MODE *************************/
 
 .dark-mode{
     background-color: #202020;
     color: white;
+}
+.dark-mode .sideNavClass li{
+    color: #202020;
+    text-shadow: 2px 2px 5px white;
 }
 

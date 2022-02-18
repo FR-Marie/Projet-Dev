@@ -10,11 +10,21 @@
     text-align: left;
     font-size: 35px;
     color: rgb(98, 98, 98);
+    text-shadow: 2px 2px 2px rgb(161, 223, 223);
+
 }
 .contenuFormP{
+    font-family: 'Lora', serif;
     margin-left: 10%;
     width: 50%;
     color: rgb(255, 255, 255);
     text-align: left;
     padding-bottom: 50px;
+    font-size: 18px;
+    background-color: rgb(161, 223, 223, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    margin-bottom: 70px;
 }

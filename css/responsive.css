@@ -1,14 +1,10 @@
 /*************** RESPONSIVE NAV ******************/
-@media screen and (max-width: 1500px) {
-    @keyframes spin {
-        0% { transform: none; }
-    }
-    .fa-solid.sunIcone{
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 992px) {
+    .gauche{
+        margin-top: 50px ;
+    }
     .centre a{
         display: none;
     }
@@ -17,13 +13,14 @@
     }
     .burger{
         right: 0;
-        display: block;
+        display: block!important;
         float: right;
         position: absolute;
         top: 30px;
     }
     .navBarClass.responsive {
-        position: relative;}
+        position: relative;
+    }
     .navBarClass.responsive a.btnBurger {
         position: absolute;
         right: 60px;
